@@ -1,0 +1,21 @@
+Rehearsal excersises in database technologies
+#### Excersise 2 
+
+UNF  	DB(staffNo, dentistName, patientNo, patientName, appointmentdate, appointmenttime, surgery number)
+
+1UNF 	DB(staffNo, dentistName, patientNo, patientName, appointmentdate, appointmenttime, surgery number)
+	DB(staffNo, dentistName)
+	DB(staffNo, patientNo, patientName,appointmentdate, appointmenttime,)
+
+2NF  	DB(staffNo, dentistName)
+	DB(PatientNo, patientName)
+	DB(staffNo, patientNo, appointment_date, appointment_time)
+	
+
+3NF	DB(staffNo, dentistName, patientNo, patientName, appointmentdate, appointmenttime, surgery number)
+	DB(staffNo, dentistName)
+	DB(PatientNo, patientName)
+	DB(staffNo, patientNo, appointment_date, appointment_time)
+	DB(staffNo, patientno, appointment_date, surgeryNo)
+
+BCNF
