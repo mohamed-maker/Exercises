@@ -1,0 +1,24 @@
+Rehearsal excersises in database technologies
+#### Excersise 2 
+
+UNF  	DB(patientNo, Full name, WardNo, Ward Name, DrugNo, name, Description, Dosage, Method of Admin, units per day, StartDate, FinishDate)
+
+1UNF 	DB(patientNo(# primary key), Full name, WardNo, Ward Name, DrugNo( #primary key), name, Description, Dosage, Method of Admin, units per day, StartDate(# primary key), FinishDate)
+	DB(PatientNo, full name)  ## gegevens patient
+	DB(patientNo, DrugNo, units per day, StartDate, FinishDate, Bednumber, Wardnumber) # ziekenhuis
+	DB(Drugno, name, Description, Dosage, Method of Admin) # gegevens drugs
+
+2NF  	DB(patientNo, Full name, WardNo, Ward Name, DrugNo, name, Description, Dosage, Method of Admin, units per day, StartDate, FinishDate)
+	DB(PatientNo, fullName) 									## gevegens patient
+	DB(patientNo, fullname, name, units per day, StartDate, Finishdate, Bednumber,?????????		) # ziekenhuis ( zie ??? we doen de wardname weg 												maar behouden de wardno om nog 														met de wardno in de lijn te 														kunnen linken) 
+	DB(Drugno, Description, Dosage, Method of Admin) 						## gegevens drugs 
+	DB(Bedno, Bedname)										## gegevens ward (hier laten we de 
+	
+3NF	DB(patientNo, Full name, WardNo, Ward Name, DrugNo, name, Description, Dosage, Method of Admin, units per day, StartDate, FinishDate)
+	DB(PatientNo, fullName) 									## gevegens patient
+	DB(patientNo, fullname, name, units per day, StartDate, Finishdate, Bednumber,?????????		) # ziekenhuis ( zie ??? we doen de wardname weg 												maar behouden de wardno om nog 														met de wardno in de lijn te 														kunnen linken) 
+	DB(Drugno, Description, Dosage, Method of Admin) 						## gegevens drugs 
+	DB(Bedno, Bedname)										## gegevens ward (hier laten we de 
+	
+
+BCNF  = 3NF
